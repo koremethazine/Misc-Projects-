@@ -1,0 +1,96 @@
+difference(){
+    color("lightpink")
+    translate([0,0,40])
+    sphere(r = 40);
+    //mouth
+    translate([0,30,28])
+    color("#F36584")
+    sphere(r=20);
+}
+
+
+//arms
+translate([-40,0,30])
+color("lightpink")
+sphere(r=10);
+
+translate([40,0,50])
+color("lightpink")
+sphere(r=10);
+
+
+
+//legs
+translate([20,0,5])
+color("red")
+sphere(r=15);
+
+translate([-20,0,5])
+color("red")
+sphere(r=15);
+
+
+
+//left eye
+translate([-10,35,50])
+color("blue")
+sphere(r=5);
+
+translate([-10,36.5,61])
+color("white")
+sphere(r=4.5);
+
+translate([-10, 35, 50])
+color("black")
+cylinder(h=15,r=5);
+
+
+//right eye
+translate([10,35,50])
+color("blue")
+sphere(r=5);
+
+translate([10,36.5,61])
+color("white")
+sphere(r=4.5);
+
+translate([10, 35, 50])
+color("black")
+cylinder(h=15,r=5);
+
+
+
+//cheeks 
+translate([-20,34,44])
+color("#F36584")
+sphere(r=5.5);
+
+translate([20,34,44])
+color("#F36584")
+sphere(r=5.5);
+
+
+//eyebrows 
+translate([2,38,63])
+rotate([0,75,0])
+color("black")
+cylinder(h= 20, r = 2);
+
+
+translate([-2,38,63])
+rotate([0,-75,0])
+color("black")
+cylinder(h= 20, r = 2);
+
+//knife
+translate([-48,6,10])
+color("black")
+cylinder(h= 37.5, r=3.5, $fn = 40);
+
+translate([-48,6,47.5])
+color("lightgrey")
+cylinder(h= 37.5, r=3.5, $fn = 40);
+
+translate([-51.5,8,45.5])
+color("lightgrey")
+cylinder(h= 40, d1=15, d2= 0, $fn = 40);
